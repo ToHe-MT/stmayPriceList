@@ -4,13 +4,13 @@
 		"price": "279.0",
 		"sizeName": "A5",
 		"size": "14.85 x 21 cm",
-    "img":"200.jpg"
+    "img":"img200"
 	},
 	{
 		"id": "195",
 		"price": "129.0",
 		"sizeName": "",
 		"size": "18 x 12.5 cm",
-    "img":"195.jpg"
+    "img":"img195"
 	}
 ]
