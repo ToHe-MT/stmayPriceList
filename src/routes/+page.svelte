@@ -28,7 +28,7 @@
 		<div class="my-12">
 			<div class=" md:container md:mx-auto px-4 sm:px-8 md:px-8 lg:max-w-[800px] xl:max-w-[800px] min-h-96">
 				<div class="flex flex-col w-full">
-					<img src={`/paintings/${item.img}`} alt="" />
+					<img src={`/paintings/${item.img}`} alt="" loading="lazy"/>
 					<div class="flex justify-end items-center py-2">
 						<span class="italic font-[Arial] text-xl"
 							>Size:
@@ -65,7 +65,7 @@
 		<div class="">
 			<div class=" min-h-96">
 				<div class="flex flex-col w-full">
-					<img src={`/paintings/${item.src}`} alt="" />
+					<img src={`/paintings/${item.src}`} alt="" loading="lazy"/>
 					<div class="flex justify-center md:justify-start items-center">
 						<span class="font-medium pt-px font-[Arial]">[ {item.id} ] = {item.price} USD</span>
 					</div>
@@ -75,8 +75,6 @@
 	</OnView>
 	{/each}
 </div>
-
-<img src={`/paintings/136.heic`} alt="" />
 
 <style lang="postcss">
 	:global(html) {
