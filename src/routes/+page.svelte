@@ -54,20 +54,20 @@
     <div class=" md:container md:mx-auto px-4 sm:px-8 md:px-8 lg:max-w-[800px] xl:max-w-[800px]">
       <div class="flex flex-col w-full">
         <span class="text-2xl font-bold font-sans">Others: </span>
-        <span class=" italic font-sans text-lg"> Size: A5 (14.85 x 21cm) </span>
+        <span class=" italic font-[Arial] text-lg font-medium"> Size: A5 (14.85 x 21cm) </span>
       </div>
     </div>
   </div>
 </OnView>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-12">
+<div class=" md:container md:mx-auto px-4 sm:px-8 md:px-8 lg:max-w-[800px] xl:max-w-[800px] grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
 	{#each Others[0].paintings as item (item.id)}
   <OnView>
 		<div class="">
-			<div class=" md:container md:mx-auto px-4 sm:px-8 md:px-8 lg:max-w-[800px] xl:max-w-[800px] min-h-96">
+			<div class=" min-h-96">
 				<div class="flex flex-col w-full">
 					<img src={`/paintings/${item.src}`} alt="" />
 					<div class="flex justify-center md:justify-start items-center">
-						<span class="text-xl font-normal font-[Arial]">[ {item.id} ] = {item.price} USD</span>
+						<span class="font-medium pt-px font-[Arial]">[ {item.id} ] = {item.price} USD</span>
 					</div>
 				</div>
 			</div>
